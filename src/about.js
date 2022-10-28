@@ -7,11 +7,15 @@ export default function about() {
     <Container id="about">
       <ScrollAnimation animateIn="fadeIn">
         <TextArea>
-          <H2>
-            I'm an artist who builds websites blah blah blah blah blah blah blah
-            blah blah blah blah blah blah blah blah blah blah blah blah blah
-            blah blah blah blah, Montreal, Canada (She / Her)
-          </H2>
+          <H3>
+            I'm a web developer based in Montreal, Canada. Over the past several
+            years my backround in art and and music has evolved into programming
+            (and occasionally designing) projects including custom Shopify
+            Themes, React apps, and working with a whole gamut of other
+            technologies. My passion for Craftsmanship, finely-tuned details,
+            and always picking up new tools is a thread which runs through my
+            work in both digital and manual creative spheres [She / Her]
+          </H3>
         </TextArea>
       </ScrollAnimation>
     </Container>
@@ -37,11 +41,7 @@ const H1 = styled.h1`
   margin-top: 0;
 `;
 
-const H2 = styled.h2`
+const H3 = styled.h2`
   color: white;
-  font-weight: 100;
-  text-shadow: -1px 1px 1px white, 1px -1px 1px white, 1px 1px 1px white,
-    0 2px #ff9e9e, 0 0 1px white, 0 0 1px white, 0 0 1px #ff9e9e,
-    0 0 1px #91ffff, 0 0 2px #ff9e9e, 0 0 1px #ff9e9e, 0 0 1px #ff9e9e,
-    0 0 1px #ff9e9e;
+  font-size: 20px;
 `;

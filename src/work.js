@@ -160,7 +160,7 @@ const H4 = styled.h4``;
 
 const H5 = styled.h5``;
 const Job = styled.div`
-  border: 2px solid white;
+  border: 3px solid white;
   margin: 20px;
   padding: 5px 15px;
 `;

@@ -45,7 +45,10 @@ export default function projects() {
             </MobileLinks>
             <About>
               Site for revolutionary architectural energy modelling software
-              Matchbox
+              Matchbox Energy. This project involved gaining a deep
+              understanding of the app in order to create concise and compelling
+              copy, as well as a light and organic UI design. Programmed using
+              React.JS
             </About>
             <Tech>
               <TechItem>React.js</TechItem>
@@ -167,8 +170,9 @@ export default function projects() {
               </Site>
             </MobileLinks>
             <About>
-              Site built for indigenous design collective Mawlukutimk (Talking
-              Circle) as part of a design competition submission
+              Custom site built for indigenous design collective Mawlukutimk
+              (Talking Circle) as part of their subission to an architecture
+              competition.
             </About>
             <Tech>
               <TechItem>HTML</TechItem>
@@ -252,8 +256,8 @@ export default function projects() {
             </MobileLinks>
             <About>
               An app where users can sign up and post ads for skills they would
-              like to swap with others in their community. Final Project for
-              Concordia Full Stack Development Bootcamp
+              like to swap with others in their community. My individual final
+              project for Concordia Full Stack Development Bootcamp
             </About>
             <Tech>
               <TechItem>React.JS</TechItem>
@@ -320,7 +324,7 @@ const Container = styled.div`
   height: auto;
   background: black;
   display: flex;
-  padding: 40px 10vw;
+  padding: 40px 12vw;
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: 768px) {
@@ -339,9 +343,9 @@ const H3 = styled.h3`
 `;
 
 const Description = styled.div`
-  width: 40vw;
+  width: 30vw;
   right: 0;
-  margin-top: -30vw;
+  margin-top: -31.2vw;
   position: relative;
   z-index: 2;
   height: auto;
@@ -349,7 +353,9 @@ const Description = styled.div`
   color: white;
   padding: 10px 20px;
   transition: 1s ease-in-out;
-
+  &:hover {
+    opacity: 1 !important;
+  }
   @media (max-width: 768px) {
     padding: 10px 3vw;
     width: 85vw;
@@ -358,16 +364,19 @@ const Description = styled.div`
 `;
 
 const DescriptionR = styled.div`
-  width: 40vw;
-  margin-top: -30vw;
+  width: 30vw;
+  margin-top: -31.2vw;
   height: auto;
   position: relative;
   z-index: 2;
-  margin-left: 37vw;
+  margin-left: 37.9vw;
   background: black;
   color: white;
   padding: 10px 20px;
   transition: 1s ease-in-out;
+  &:hover {
+    opacity: 1 !important;
+  }
   @media (max-width: 768px) {
     padding: 10px 3vw;
     width: 88%;
@@ -378,7 +387,7 @@ const DescriptionR = styled.div`
 const Overlay = styled.div`
   position: absolute;
   top: 0;
-  width: 75vw;
+  width: 71vw;
   height: 32.7vw;
   opacity: 0.8;
   z-index: 1;
@@ -389,11 +398,11 @@ const Overlay = styled.div`
   }
 `;
 const Proj = styled.div`
-  height: 32.5vw;
-  width: 75vw;
+  height: 30.8vw;
+  width: 71vw;
   position: relative;
   background: transparent;
-  margin: 100px 10px;
+  margin: 50px 10px;
   background-repeat: no-repeat;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
@@ -409,7 +418,7 @@ const Proj = styled.div`
   &:hover {
     box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
       1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
-      0 0 100px #91ffff, 0 0 85px #ff9e9e, 0 0 10px #ff9e9e, 0 0 60px #ff9e9e,
+      0 0 20px #91ffff, 0 0 15px #ff9e9e, 0 0 10px #ff9e9e, 0 0 15px #ff9e9e,
       0 0 70px #ff9e9e, 0 0 10px #75ffca;
   }
   &:hover ${Description} {
@@ -424,11 +433,11 @@ const Proj = styled.div`
 `;
 
 const ProjM = styled.div`
-  height: 32.5vw;
-  width: 75vw;
+  height: 30.8vw;
+  width: 71vw;
   position: relative;
   background: transparent;
-  margin: 100px 10px;
+  margin: 50px 10px;
   background-repeat: no-repeat;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
@@ -454,7 +463,7 @@ const ProjM = styled.div`
 `;
 
 const Video = styled.video`
-  width: 75vw;
+  width: 71vw;
   display: absolute;
   z-index: 0;
   @media (max-width: 768px) {
@@ -463,9 +472,9 @@ const Video = styled.video`
 `;
 
 const VideoM = styled.video`
-  width: 18.4vw;
+  width: 17.4vw;
   display: absolute;
-  margin-left: 40vw;
+  margin-left: 35vw;
   z-index: 0;
   @media (max-width: 768px) {
     display: none;
@@ -485,8 +494,8 @@ const Links = styled.div`
   position: absolute;
   width: 40%;
   text-align: center;
-  margin-top: 10vw;
-  margin-left: 6.5vw;
+  margin-top: 5vw;
+  margin-left: 2.3vw;
   display: flex;
   justify-content: space-around;
   z-index: 20;
@@ -499,8 +508,8 @@ const LinksR = styled.div`
   position: absolute;
   width: 50%;
   text-align: center;
-  margin-top: 10vw;
-  margin-left: 40.2vw;
+  margin-top: 5vw;
+  margin-left: 36.8vw;
   display: flex;
   justify-content: space-around;
   z-index: 20;
@@ -548,13 +557,14 @@ const TechItem = styled.div`
   border-radius: 15px;
   padding: 3px 10px;
   margin: 5px 10px;
+  font-size: 14px;
 `;
 
 const About = styled.div`
   width: 100%;
   background: transparent;
-  height: 150px;
-  margin: 100px 0 10px 0;
+  height: 100px;
+  margin: 60px 0 10px 0;
   color: white;
   @media (max-width: 768px) {
     margin: 10px 0;

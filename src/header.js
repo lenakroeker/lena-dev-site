@@ -125,11 +125,14 @@ const neon = keyframes`
     0 0 3px white, 0 0 10px white, 0 0 20px white,
     0 0 30px #FF9E9E, 0 0 40px #FF9E9E, 0 0 50px #91ffff, 0 0 70px #FF9E9E, 0 0 100px #FF9E9E, 0 0 200px #c896fa;
   }
-  100% {
+  99% {
     box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
       1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
       0 0 1px #ff9e9e, 0 0 5px #91ffff, 0 0 2px #ff9e9e, 0 0 3px #ff9e9e,
       0 0 4px #ff9e9e, 0 0 5px #ff9e9e;
+  }
+  100% {
+    box-shadow: none;
   }
   
 `;
@@ -149,7 +152,11 @@ const drawer = keyframes`
 const NavItem = styled.a`
   text-decoration: none;
   color: #fcf3f2;
-  transition: 0.1s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 30px;
+  background: transparent;
+  height: 42px;
+  padding: 0 20px;
   @media (max-width: 768px) {
     display: block;
     background: transparent;
@@ -160,7 +167,13 @@ const NavItem = styled.a`
     z-index: 10;
   }
   &:hover {
+    color: #b80056 !important;
   }
+`;
+
+const TEffect = styled.div`
+  position: absolute;
+  top: 6px;
 `;
 
 const Head = styled.header`
