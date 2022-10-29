@@ -134,6 +134,7 @@ const Container = styled.div`
   background: black;
   padding-bottom: 50px;
   padding-top: 50px;
+  color: #fff0f5;
 `;
 
 const H3 = styled.h3`
@@ -142,6 +143,9 @@ const H3 = styled.h3`
   color: white;
   font-size: 40px;
   animation: ${neon} 7s infinite;
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 `;
 
 const TextArea = styled.div`
@@ -153,20 +157,39 @@ const TextArea = styled.div`
   color: white;
   @media (max-width: 768px) {
     width: 80vw;
+    font-size: 20px;
   }
 `;
 
-const H4 = styled.h4``;
+const H4 = styled.h4`
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+`;
 
 const H5 = styled.h5``;
 const Job = styled.div`
-  border: 3px solid white;
+  border: 3px solid #fff0f5;
   margin: 20px;
   padding: 5px 15px;
+  transition: 3s ease-in-out;
+  &:hover {
+    box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
+      0 0 2px #91ffff, 0 0 15px #ff9e9e, 0 0 10px #ff9e9e, 0 0 15px #ff9e9e,
+      0 0 10px #ff9e9e, 0 0 10px #75ffca;
+  }
+  @media (max-width: 768px) {
+    margin: 20px 0px;
+  }
 `;
 
 const TaskList = styled.ul``;
 const Task = styled.li`
   font-size: 14px;
   margin: 5px 0;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin: 10px 0 10px -20px;
+  }
 `;

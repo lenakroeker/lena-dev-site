@@ -107,7 +107,7 @@ const neon = keyframes`
 const Container = styled.div`
   height: auto;
   background: black;
-  color: #fcf3f2;
+  color: #fff0f5;
   padding: 40px 20vw;
   margin-bottom: 0;
   justify-content: space-between;
@@ -121,6 +121,9 @@ const H3 = styled.h3`
   color: white;
   font-size: 40px;
   animation: ${neon} 7s infinite;
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 `;
 const ListArea = styled.div`
   display: flex;
@@ -139,5 +142,6 @@ const Li = styled.li`
   @media (max-width: 768px) {
     padding: 10px 0;
     width: 100%;
+    font-size: 20px;
   }
 `;

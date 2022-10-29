@@ -134,10 +134,21 @@ const Button = styled.button`
   cursor: pointer;
   margin: 10px auto;
   background: black;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid #fff0f5;
+  color: #fff0f5;
   transition: 0.5s ease-in-out;
   &:hover {
+    box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
+      0 0 10px #ff9e9e, 0 0 15px #ff9e9e, 0 0 20px #c896fa, 0 0 30px #ff9e9e,
+      0 0 40px #ff9e9e, 0 0 50px #75ffca;
+    background: white;
+    color: black;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    font-size: 25px;
+    padding: 20px 0;
     box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
       1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
       0 0 10px #ff9e9e, 0 0 15px #ff9e9e, 0 0 20px #c896fa, 0 0 30px #ff9e9e,
@@ -148,15 +159,19 @@ const Button = styled.button`
 `;
 
 const Input = styled.input`
-  border: 5px solid white;
-  padding: 10px 20px;
+  border: 5px solid #fff0f5;
+  padding: 3px 12px;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
   margin: 10px 0;
   background: black;
   transition: 0.5s ease-in-out;
+  color: #ccfcf1;
   @media (max-width: 768px) {
     padding: 10px 20px;
     margin: 15px 0;
     width: calc(100% - 40px);
+    font-size: 20px;
   }
   &:focus {
     outline: none;
@@ -169,8 +184,11 @@ const Input = styled.input`
 
 const InputEmail = styled.input`
   display: inline;
-  border: 5px solid white;
-  padding: 10px 20px;
+  border: 5px solid #fff0f5;
+  padding: 3px 12px;
+  color: #ccfcf1;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
   margin: 10px;
   background: black;
   transition: 0.5s ease-in-out;
@@ -178,6 +196,7 @@ const InputEmail = styled.input`
     padding: 10px 20px;
     margin: 15px 0;
     width: calc(100% - 40px);
+    font-size: 20px;
   }
   &:focus {
     outline: none;
@@ -191,13 +210,18 @@ const InputEmail = styled.input`
 const TextArea = styled.textarea`
   width: calc(100% - 40px);
   height: 12em;
-  border: 5px solid white;
+  padding: 3px 12px;
+  font-family: "Mukta", sans-serif;
+  font-size: 16px;
+  border: 5px solid #fff0f5;
   padding: 10px 20px;
   background: black;
   margin-left: -5px;
+  color: #ccfcf1;
   transition: 0.5s ease-in-out;
   @media (max-width: 768px) {
     margin: 15px 0;
+    font-size: 20px;
   }
   &:focus {
     outline: none;

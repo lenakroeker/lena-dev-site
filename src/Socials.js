@@ -51,7 +51,7 @@ const Container = styled.div`
 
 const TextArea = styled.div`
   background: transparent;
-  color: white;
+  color: #ccfcf1;
   line-height: 20px;
 `;
 
@@ -60,6 +60,6 @@ const Div = styled.div`
 `;
 
 const A = styled.a`
-  color: white;
+  color: #ccfcf1;
   height: 50px;
 `;

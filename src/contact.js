@@ -75,4 +75,7 @@ const H3 = styled.div`
   font-size: 40px;
   padding-bottom: 20px;
   animation: ${neon} 7s infinite;
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 `;

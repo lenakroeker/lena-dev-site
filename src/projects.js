@@ -89,28 +89,110 @@ export default function projects() {
         </Proj>
       </ScrollAnimation>
       <ScrollAnimation animateIn="fadeIn">
-        <Proj>
+        <ProjM>
           <Links>
+            <Site
+              target="_blank"
+              href="https://github.com/lenakroeker/skill_swap"
+            >
+              Code
+            </Site>
+          </Links>
+          <Overlay></Overlay>
+          <VideoM autoPlay loop muted>
+            <source src={SkillSwap} type="video/mp4" />
+          </VideoM>
+          <Description>
+            <H4>SkillSwap</H4>
+            <MobileLinks>
+              <Site
+                target="_blank"
+                href="https://github.com/lenakroeker/skill_swap"
+              >
+                Code
+              </Site>
+            </MobileLinks>
+            <About>
+              CRUD app where users can sign up and post ads for skills they
+              would like to swap with others in their community. My individual
+              final project for Concordia Full Stack Development Bootcamp
+            </About>
+            <Tech>
+              <TechItem>React.JS</TechItem>
+              <TechItem>Styled Components</TechItem>
+
+              <TechItem>Node.js</TechItem>
+              <TechItem>Firebase Realtime Database</TechItem>
+              <TechItem>Firebase Storage</TechItem>
+              <TechItem>NPM</TechItem>
+            </Tech>
+          </Description>
+        </ProjM>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Proj>
+          <LinksR>
             <Site target="_blank" href="richardkroekerdesign.com">
               richardkroekerdesign.com
             </Site>
-          </Links>
+          </LinksR>
           <Overlay></Overlay>
           <Video autoPlay loop muted>
             <source src={RichVid} type="video/mp4" />
           </Video>
-          <Description>
+          <DescriptionR>
             <H4>Richard Kroeker Design</H4>
             <MobileLinks>
               <Site target="_blank" href="richardkroekerdesign.com">
                 richardkroekerdesign.com
               </Site>
             </MobileLinks>
-            <About>Site for world renowned architect Richard Kroeker</About>
+            <About>
+              Site designed and build for world renowned architect Richard
+              Kroeker
+            </About>
             <Tech>
               <TechItem>HTML</TechItem>
               <TechItem>CSS</TechItem>
               <TechItem>JS</TechItem>
+            </Tech>
+          </DescriptionR>
+        </Proj>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Proj>
+          <Links>
+            <Site
+              target="_blank"
+              href="https://github.com/lenakroeker/Mawlukutimk"
+            >
+              Code
+            </Site>
+          </Links>
+          <Overlay></Overlay>
+          <Video autoPlay loop muted>
+            <source src={TCVid} type="video/mp4" />
+          </Video>
+          <Description>
+            <H4>Mawlukutimk Talking Circle Site</H4>
+            <MobileLinks>
+              <Site
+                target="_blank"
+                href="https://github.com/lenakroeker/Mawlukutimk"
+              >
+                Code
+              </Site>
+            </MobileLinks>
+            <About>
+              Custom site designed built for indigenous design collective
+              Mawlukutimk (Talking Circle) as part of their subission to an
+              architecture competition.
+            </About>
+            <Tech>
+              <TechItem>HTML</TechItem>
+              <TechItem>CSS</TechItem>
+              <TechItem>JS</TechItem>
+              <TechItem>UI/UX Design</TechItem>
             </Tech>
           </Description>
         </Proj>
@@ -145,44 +227,7 @@ export default function projects() {
           </DescriptionR>
         </Proj>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <Proj>
-          <Links>
-            <Site
-              target="_blank"
-              href="https://github.com/lenakroeker/Mawlukutimk"
-            >
-              Code
-            </Site>
-          </Links>
-          <Overlay></Overlay>
-          <Video autoPlay loop muted>
-            <source src={TCVid} type="video/mp4" />
-          </Video>
-          <Description>
-            <H4>Mawlukutimk Talking Circle Site</H4>
-            <MobileLinks>
-              <Site
-                target="_blank"
-                href="https://github.com/lenakroeker/Mawlukutimk"
-              >
-                Code
-              </Site>
-            </MobileLinks>
-            <About>
-              Custom site built for indigenous design collective Mawlukutimk
-              (Talking Circle) as part of their subission to an architecture
-              competition.
-            </About>
-            <Tech>
-              <TechItem>HTML</TechItem>
-              <TechItem>CSS</TechItem>
-              <TechItem>JS</TechItem>
-              <TechItem>UI/UX Design</TechItem>
-            </Tech>
-          </Description>
-        </Proj>
-      </ScrollAnimation>
+
       <ScrollAnimation animateIn="fadeIn">
         <Proj>
           <LinksR>
@@ -206,8 +251,11 @@ export default function projects() {
           <DescriptionR>
             <H4>Inspirational Quote Generator</H4>
             <MobileLinks>
-              <Site target="_blank" href="https://matchboxenergy.com">
-                inspirationalquotegenerator.com
+              <Site
+                target="_blank"
+                href="https://inspirationalquotegenerator.com"
+              >
+                inspirational quote generator.com
               </Site>
               <Site
                 target="_blank"
@@ -229,47 +277,6 @@ export default function projects() {
             </Tech>
           </DescriptionR>
         </Proj>
-      </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
-        <ProjM>
-          <Links>
-            <Site
-              target="_blank"
-              href="https://github.com/lenakroeker/skill_swap"
-            >
-              Code
-            </Site>
-          </Links>
-          <Overlay></Overlay>
-          <VideoM autoPlay loop muted>
-            <source src={SkillSwap} type="video/mp4" />
-          </VideoM>
-          <Description>
-            <H4>SkillSwap</H4>
-            <MobileLinks>
-              <Site
-                target="_blank"
-                href="https://github.com/lenakroeker/skill_swap"
-              >
-                Code
-              </Site>
-            </MobileLinks>
-            <About>
-              An app where users can sign up and post ads for skills they would
-              like to swap with others in their community. My individual final
-              project for Concordia Full Stack Development Bootcamp
-            </About>
-            <Tech>
-              <TechItem>React.JS</TechItem>
-              <TechItem>Styled Components</TechItem>
-
-              <TechItem>Node.js</TechItem>
-              <TechItem>Firebase Realtime Database</TechItem>
-              <TechItem>Firebase Storage</TechItem>
-              <TechItem>NPM</TechItem>
-            </Tech>
-          </Description>
-        </ProjM>
       </ScrollAnimation>
     </Container>
   );
@@ -326,6 +333,8 @@ const Container = styled.div`
   display: flex;
   padding: 40px 12vw;
   flex-wrap: wrap;
+  color: #fff0f5;
+
   justify-content: space-between;
   @media (max-width: 768px) {
     display: block;
@@ -338,49 +347,54 @@ const H3 = styled.h3`
   color: white;
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   animation: ${neon} 7s infinite;
+  @media (max-width: 768px) {
+    font-size: 60px;
+  }
 `;
 
 const Description = styled.div`
   width: 30vw;
-  right: 0;
-  margin-top: -31.2vw;
-  position: relative;
+  min-width: 400px;
+  left: 0;
+  position: absolute;
+  top: 0;
   z-index: 2;
   height: auto;
   background: black;
-  color: white;
   padding: 10px 20px;
   transition: 1s ease-in-out;
   &:hover {
     opacity: 1 !important;
   }
   @media (max-width: 768px) {
+    position: relative;
     padding: 10px 3vw;
-    width: 85vw;
-    margin: 10px auto;
+    min-width: 88%;
+    margin: 10px auto 15px auto;
   }
 `;
 
 const DescriptionR = styled.div`
   width: 30vw;
-  margin-top: -31.2vw;
+  top: 0;
   height: auto;
-  position: relative;
+  position: absolute;
   z-index: 2;
-  margin-left: 37.9vw;
+  right: -2px;
   background: black;
-  color: white;
   padding: 10px 20px;
   transition: 1s ease-in-out;
   &:hover {
     opacity: 1 !important;
   }
   @media (max-width: 768px) {
+    position: relative;
+
     padding: 10px 3vw;
     width: 88%;
-    margin: 10px auto;
+    margin: 10px auto 15px auto;
   }
 `;
 
@@ -399,18 +413,20 @@ const Overlay = styled.div`
 `;
 const Proj = styled.div`
   height: 30.8vw;
-  width: 71vw;
+  width: 70.8vw;
   position: relative;
   background: transparent;
   margin: 50px 10px;
   background-repeat: no-repeat;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
-    margin: 10px 0px;
+    margin: 70px 0px;
     width: 100%;
     box-shadow: none;
     height: auto;
-    border: 2px solid white;
+    border: 2px solid #fff0f5;
+
+    border-radius: 0 0 40px 40px;
     &:hover {
       box-shadow: none;
     }
@@ -441,11 +457,13 @@ const ProjM = styled.div`
   background-repeat: no-repeat;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
-    margin: 10px 0px;
+    margin: 70px 0px;
     width: 100%;
     box-shadow: none;
     height: auto;
     border: 2px solid white;
+    border-radius: 0 0 40px 40px;
+
     &:hover {
       box-shadow: none;
     }
@@ -467,7 +485,7 @@ const Video = styled.video`
   display: absolute;
   z-index: 0;
   @media (max-width: 768px) {
-    display: none;
+    width: 100%;
   }
 `;
 
@@ -477,7 +495,7 @@ const VideoM = styled.video`
   margin-left: 35vw;
   z-index: 0;
   @media (max-width: 768px) {
-    display: none;
+    width: 25%;
   }
 `;
 
@@ -487,6 +505,11 @@ const H4 = styled.h4`
   font-size: 20px;
   @media (max-width: 768px) {
     font-size: 30px;
+    margin-top: -90px;
+    background: black;
+    width: calc(100% - 20px);
+    padding: 25px 10px;
+    border-radius: 30px 30px 0px 0px;
   }
 `;
 
@@ -494,9 +517,10 @@ const Links = styled.div`
   position: absolute;
   width: 40%;
   text-align: center;
-  margin-top: 5vw;
-  margin-left: 2.3vw;
+  margin-top: 70px;
+  margin-left: calc(215px - 14vw);
   display: flex;
+  color: #ffd9db;
   justify-content: space-around;
   z-index: 20;
   @media (max-width: 768px) {
@@ -508,7 +532,7 @@ const LinksR = styled.div`
   position: absolute;
   width: 50%;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 70px;
   margin-left: 36.8vw;
   display: flex;
   justify-content: space-around;
@@ -522,7 +546,7 @@ const MobileLinks = styled.div`
   display: none;
   @media (max-width: 768px) {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -531,11 +555,12 @@ const MobileLinks = styled.div`
 
 const Site = styled.a`
   text-align: center;
-  color: white;
   background: black;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 5px 10px;
   border-radius: 10px;
+  color: #ffd9db;
+
   @media (max-width: 768px) {
     display: block;
     margin: 20px auto;
@@ -558,15 +583,23 @@ const TechItem = styled.div`
   padding: 3px 10px;
   margin: 5px 10px;
   font-size: 14px;
+  @media (max-width: 768px) {
+    font-size: 23px;
+  }
 `;
 
 const About = styled.div`
   width: 100%;
   background: transparent;
-  height: 100px;
+  min-height: 100px;
+  height: auto;
   margin: 60px 0 10px 0;
-  color: white;
   @media (max-width: 768px) {
-    margin: 10px 0;
+    margin: 10px auto 40px auto;
+    width: 90%;
+    height: auto;
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.2em;
   }
 `;

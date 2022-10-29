@@ -61,12 +61,18 @@ const Container = styled.div`
   background: black;
   margin: 0;
   height: 90vh;
+  @media (max-width: 768px) {
+    height: 80vh;
+  }
 `;
 
 const TextArea = styled.div`
   padding-top: 40vh;
   padding-left: 20vw;
   padding-right: 20vw;
+  @media (max-width: 768px) {
+    padding-top: 20vh;
+  }
 `;
 
 const H1 = styled.h1`
@@ -75,9 +81,15 @@ const H1 = styled.h1`
   margin-top: 0;
   font-size: 60px;
   font-weight: light;
+  @media (max-width: 768px) {
+    font-size: 80px;
+  }
 `;
 
 const H2 = styled.h2`
   color: white;
   animation: ${neon} 7s infinite;
+  @media (max-width: 768px) {
+    font-size: 45px;
+  }
 `;

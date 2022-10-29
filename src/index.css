@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Mukta", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  background: black;
 }
 
 code {
@@ -17,8 +18,14 @@ code {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Heebo", sans-serif;
+}
+
+h4,
+h5 {
+  font-weight: bold;
 }
 
 .header.shadow {

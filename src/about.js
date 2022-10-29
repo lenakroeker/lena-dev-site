@@ -24,7 +24,7 @@ export default function about() {
 
 const Container = styled.div`
   background: black;
-
+  color: #fff0f5;
   margin: 0;
   height: auto;
 `;
@@ -34,14 +34,15 @@ const TextArea = styled.div`
   margin: auto;
   padding: 50px 0;
   text-align: center;
-`;
-
-const H1 = styled.h1`
-  color: white;
-  margin-top: 0;
+  @media (max-width: 768px) {
+    width: 75vw;
+  }
 `;
 
 const H3 = styled.h2`
   color: white;
   font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
