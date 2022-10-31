@@ -134,7 +134,10 @@ const Container = styled.div`
   background: black;
   padding-bottom: 50px;
   padding-top: 50px;
-  color: #fff0f5;
+  color: #fffafc;
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 const H3 = styled.h3`
@@ -144,7 +147,13 @@ const H3 = styled.h3`
   font-size: 40px;
   animation: ${neon} 7s infinite;
   @media (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
+    margin-top: 0;
+    animation: none;
+    text-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
+      0 0 10px #75ffca, 0 0 35px #ff9e9e, 0 0 20px #c896fa, 0 0 80px #ff9e9e,
+      0 0 40px #ff9e9e, 0 0 100px #91ffff;
   }
 `;
 
@@ -154,9 +163,9 @@ const TextArea = styled.div`
   margin: 50px auto;
   padding: 10px 20px;
   background: black;
-  color: white;
+  color: #fffafc;
   @media (max-width: 768px) {
-    width: 80vw;
+    width: 90vw;
     font-size: 20px;
   }
 `;
@@ -169,7 +178,7 @@ const H4 = styled.h4`
 
 const H5 = styled.h5``;
 const Job = styled.div`
-  border: 3px solid #fff0f5;
+  border: 3px solid #fffafc;
   margin: 20px;
   padding: 5px 15px;
   transition: 3s ease-in-out;

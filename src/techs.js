@@ -22,9 +22,9 @@ export default function Techs() {
             <Li>Wordpress (Divi)</Li>
             <Li>Shopify (Liquid)</Li>
             <Li>GitHub</Li>
+            <Li>Node.JS</Li>
           </Ul>
           <Ul>
-            <Li>Node.JS</Li>
             <Li>MongoDB</Li>
             <Li>Express</Li>
             <Li>MongoDB</Li>
@@ -37,22 +37,29 @@ export default function Techs() {
             <Li>VSC</Li>
             <Li>NPM</Li>
             <Li>Yarn</Li>
+            <Monly>
+              <Li>Squarespace</Li>
+              <Li>Adobe UX</Li>
+              <Li>Mailchimp</Li>
+              <Li>Kanban Flow</Li>
+              <Li>WinSCP</Li>
+              <Li>Trello</Li>
+            </Monly>
           </Ul>
-          <Ul>
-            <Li>WinSCP</Li>
-            <Li>Trello</Li>
-            <Li>Gimp</Li>
+          <Ul3>
             <Li>Confluence</Li>
             <Li>Photoshop</Li>
             <Li>WinSCP</Li>
-            <Li>Squarespace</Li>
-            <Li>Trello</Li>
-            <Li>Gimp</Li>
-            <Li>Confluence</Li>
-            <Li>Adobe UX</Li>
-            <Li>Mailchimp</Li>
-            <Li>Kanban Flow</Li>
-          </Ul>
+            <Mnone>
+              <Li>Gimp</Li>
+              <Li>WinSCP</Li>
+              <Li>Trello</Li>
+              <Li>Squarespace</Li>
+              <Li>Adobe UX</Li>
+              <Li>Mailchimp</Li>
+              <Li>Kanban Flow</Li>
+            </Mnone>
+          </Ul3>
         </ListArea>
       </ScrollAnimation>
     </Container>
@@ -107,7 +114,7 @@ const neon = keyframes`
 const Container = styled.div`
   height: auto;
   background: black;
-  color: #fff0f5;
+  color: #fffafc;
   padding: 40px 20vw;
   margin-bottom: 0;
   justify-content: space-between;
@@ -122,7 +129,12 @@ const H3 = styled.h3`
   font-size: 40px;
   animation: ${neon} 7s infinite;
   @media (max-width: 768px) {
-    font-size: 60px;
+    font-size: 40px;
+    animation: none;
+    text-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
+      0 0 10px #75ffca, 0 0 35px #ff9e9e, 0 0 20px #c896fa, 0 0 80px #ff9e9e,
+      0 0 40px #ff9e9e, 0 0 100px #91ffff;
   }
 `;
 const ListArea = styled.div`
@@ -131,9 +143,30 @@ const ListArea = styled.div`
   justify-content: space-between;
 `;
 
+const Mnone = styled.div`
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const Monly = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
 const Ul = styled.ul`
   @media (max-width: 768px) {
     margin-bottom: -13px;
+    width: 32vw;
+  }
+`;
+
+const Ul3 = styled.ul`
+  @media (max-width: 768px) {
+    margin-top: -153px;
     width: 32vw;
   }
 `;

@@ -134,8 +134,8 @@ const Button = styled.button`
   cursor: pointer;
   margin: 10px auto;
   background: black;
-  border: 3px solid #fff0f5;
-  color: #fff0f5;
+  border: 3px solid #fffafc;
+  color: #fffafc;
   transition: 0.5s ease-in-out;
   &:hover {
     box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
@@ -159,7 +159,7 @@ const Button = styled.button`
 `;
 
 const Input = styled.input`
-  border: 5px solid #fff0f5;
+  border: 5px solid #fffafc;
   padding: 3px 12px;
   font-family: "Mukta", sans-serif;
   font-size: 16px;
@@ -184,7 +184,7 @@ const Input = styled.input`
 
 const InputEmail = styled.input`
   display: inline;
-  border: 5px solid #fff0f5;
+  border: 5px solid #fffafc;
   padding: 3px 12px;
   color: #ccfcf1;
   font-family: "Mukta", sans-serif;
@@ -213,7 +213,7 @@ const TextArea = styled.textarea`
   padding: 3px 12px;
   font-family: "Mukta", sans-serif;
   font-size: 16px;
-  border: 5px solid #fff0f5;
+  border: 5px solid #fffafc;
   padding: 10px 20px;
   background: black;
   margin-left: -5px;

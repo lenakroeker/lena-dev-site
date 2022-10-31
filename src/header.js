@@ -205,6 +205,7 @@ const Head = styled.header`
   &:hover {
     animation: ${neon} 7s infinite 0.2s;
     background: white;
+  }
 
   &:hover ${NavItem} {
     color: black;
@@ -255,7 +256,7 @@ const MobileNav = styled.div`
     color: white;
     position: relative;
     text-align: center;
-    animation: ${drawer} 1s;
+    animation: ${drawer} 0.4s;
     width: 30vw;
     height: 100vh;
     z-index: 10;

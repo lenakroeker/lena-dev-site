@@ -333,7 +333,7 @@ const Container = styled.div`
   display: flex;
   padding: 40px 12vw;
   flex-wrap: wrap;
-  color: #fff0f5;
+  color: #fffafc;
 
   justify-content: space-between;
   @media (max-width: 768px) {
@@ -350,7 +350,12 @@ const H3 = styled.h3`
   font-size: 40px;
   animation: ${neon} 7s infinite;
   @media (max-width: 768px) {
-    font-size: 60px;
+    font-size: 50px;
+    animation: none;
+    text-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 2px white, 0 0 3px white, 0 0 5px white,
+      0 0 10px #75ffca, 0 0 35px #ff9e9e, 0 0 20px #c896fa, 0 0 80px #ff9e9e,
+      0 0 40px #ff9e9e, 0 0 100px #91ffff;
   }
 `;
 
@@ -370,9 +375,11 @@ const Description = styled.div`
   }
   @media (max-width: 768px) {
     position: relative;
-    padding: 10px 3vw;
-    min-width: 88%;
-    margin: 10px auto 15px auto;
+    border-radius: 40px;
+    min-width: 100%;
+    padding: 10px 0;
+    width: 100%;
+    margin: 10px auto 5px auto;
   }
 `;
 
@@ -391,10 +398,11 @@ const DescriptionR = styled.div`
   }
   @media (max-width: 768px) {
     position: relative;
-
-    padding: 10px 3vw;
-    width: 88%;
-    margin: 10px auto 15px auto;
+    border-radius: 40px;
+    min-width: 99%;
+    padding: 10px 0;
+    width: 99%;
+    margin: 10px 0 5px 0;
   }
 `;
 
@@ -420,11 +428,11 @@ const Proj = styled.div`
   background-repeat: no-repeat;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
-    margin: 70px 0px;
-    width: 100%;
+    margin: 70px 5% 20px 5%;
+    width: 90%;
     box-shadow: none;
     height: auto;
-    border: 2px solid #fff0f5;
+    border: 2px solid #fffafc;
 
     border-radius: 0 0 40px 40px;
     &:hover {
@@ -461,7 +469,7 @@ const ProjM = styled.div`
     width: 100%;
     box-shadow: none;
     height: auto;
-    border: 2px solid white;
+    border: 2px solid #fffafc;
     border-radius: 0 0 40px 40px;
 
     &:hover {
@@ -507,8 +515,9 @@ const H4 = styled.h4`
     font-size: 30px;
     margin-top: -90px;
     background: black;
-    width: calc(100% - 20px);
-    padding: 25px 10px;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 25px 0 10px 0;
     border-radius: 30px 30px 0px 0px;
   }
 `;
@@ -520,7 +529,7 @@ const Links = styled.div`
   margin-top: 70px;
   margin-left: calc(215px - 14vw);
   display: flex;
-  color: #ffd9db;
+  color: #f7fffe;
   justify-content: space-around;
   z-index: 20;
   @media (max-width: 768px) {
@@ -546,7 +555,7 @@ const MobileLinks = styled.div`
   display: none;
   @media (max-width: 768px) {
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     width: 100%;
     text-align: center;
@@ -559,11 +568,13 @@ const Site = styled.a`
   padding: 10px 10px;
   margin: 5px 10px;
   border-radius: 10px;
-  color: #ffd9db;
+  color: #f7fffe;
 
   @media (max-width: 768px) {
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 7px auto;
+    padding-top: 0;
+    font-weight: bold;
   }
 `;
 
@@ -575,6 +586,9 @@ const Tech = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const TechItem = styled.div`
@@ -584,7 +598,8 @@ const TechItem = styled.div`
   margin: 5px 10px;
   font-size: 14px;
   @media (max-width: 768px) {
-    font-size: 23px;
+    font-size: 15px;
+    padding: 0px 8px;
   }
 `;
 
@@ -598,7 +613,9 @@ const About = styled.div`
     margin: 10px auto 40px auto;
     width: 90%;
     height: auto;
-    font-size: 23px;
+    min-height: auto;
+
+    font-size: 18px;
     text-align: center;
     line-height: 1.2em;
   }

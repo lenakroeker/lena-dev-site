@@ -62,7 +62,8 @@ const Container = styled.div`
   margin: 0;
   height: 90vh;
   @media (max-width: 768px) {
-    height: 80vh;
+    height: auto;
+    margin-bottom: 20vh;
   }
 `;
 
@@ -71,7 +72,7 @@ const TextArea = styled.div`
   padding-left: 20vw;
   padding-right: 20vw;
   @media (max-width: 768px) {
-    padding-top: 20vh;
+    padding: 20vw 25vw 0 5vw;
   }
 `;
 
@@ -82,7 +83,7 @@ const H1 = styled.h1`
   font-size: 60px;
   font-weight: light;
   @media (max-width: 768px) {
-    font-size: 80px;
+    font-size: 60px;
   }
 `;
 
@@ -90,6 +91,5 @@ const H2 = styled.h2`
   color: white;
   animation: ${neon} 7s infinite;
   @media (max-width: 768px) {
-    font-size: 45px;
-  }
+    font-size: 30px;
 `;
