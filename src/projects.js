@@ -197,7 +197,7 @@ export default function projects() {
           </Description>
         </Proj>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
+      {/* <ScrollAnimation animateIn="fadeIn">
         <Proj>
           <LinksR>
             <Site target="_blank" href="https://vasartspace.ca">
@@ -226,7 +226,7 @@ export default function projects() {
             </Tech>
           </DescriptionR>
         </Proj>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
 
       <ScrollAnimation animateIn="fadeIn">
         <Proj>
