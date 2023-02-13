@@ -1,6 +1,6 @@
 {
-  "short_name": "Dev Site",
-  "name": "Lena Kroeker Dev site",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
