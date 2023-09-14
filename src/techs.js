@@ -23,6 +23,7 @@ export default function Techs() {
             <Li>Shopify (Liquid)</Li>
             <Li>GitHub</Li>
             <Li>Node.JS</Li>
+            <Li>Postman</Li>
           </Ul>
           <Ul>
             <Li>MongoDB</Li>

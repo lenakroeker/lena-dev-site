@@ -4,7 +4,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import MatchboxVid from "./assets/matchbox-vid.mp4";
 import LenaVid from "./assets/lenasite.mp4";
 import RichVid from "./assets/richsite.mp4";
-import VasVid from "./assets/vas.mp4";
+import GreyVid from "./assets/greyroomshop.mp4";
 import TCVid from "./assets/tc.mp4";
 import Inspo from "./assets/inspo.mp4";
 import SkillSwap from "./assets/skillswap.mp4";
@@ -15,6 +15,36 @@ export default function projects() {
       <H3>Projects</H3>
       <ScrollAnimation animateIn="fadeIn">
         <Proj id="proj">
+          <LinksR>
+            <Site target="_blank" href="https://greyroomshop.com/">
+              greyroomshop.com
+            </Site>
+          </LinksR>
+          <Overlay></Overlay>
+          <VideoS autoPlay loop muted>
+            <source src={GreyVid} type="video/mp4" />
+          </VideoS>
+          <DescriptionR>
+            <H4>GREY ROOM SHOP</H4>
+            <MobileLinks>
+              <Site target="_blank" href="https://greyroomshop.com/">
+                greyroomshop.com
+              </Site>
+            </MobileLinks>
+            <About>
+              Website for curated luxury closet grey room shop. Project included
+              site and logo design, custom shopify theme, site migration from
+              depop, inventory data structure
+            </About>
+            <Tech>
+              <TechItem>Shopify (Liquid)</TechItem>
+              <TechItem>UI/UX Design</TechItem>
+            </Tech>
+          </DescriptionR>
+        </Proj>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Proj>
           <Links>
             <Site target="_blank" href="https://matchboxenergy.com">
               matchboxenergy.com
@@ -489,6 +519,15 @@ const ProjM = styled.div`
 `;
 
 const Video = styled.video`
+  width: 71vw;
+  display: absolute;
+  z-index: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const VideoS = styled.video`
   width: 71vw;
   display: absolute;
   z-index: 0;
