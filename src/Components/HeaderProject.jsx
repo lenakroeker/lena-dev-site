@@ -59,24 +59,40 @@ export const Header2 = () => {
     scrollToHome(1350); // Navigate to "Home" route first
   };
 
+  const toProjectsm = () => {
+    scrollToHome(375); // Navigate to "Home" route first
+  };
+
   const toTech = () => {
     scrollToHome(3400); // Navigate to "Home" route first
+  };
+
+  const toTechm = () => {
+    scrollToHome(3600); // Navigate to "Home" route first
   };
 
   const toCv = () => {
     scrollToHome(4000); // Navigate to "Home" route first
   };
 
+  const toCvm = () => {
+    scrollToHome(4150); // Navigate to "Home" route first
+  };
+
   const toContact = () => {
     scrollToHome(6000); // Navigate to "Home" route first
+  };
+
+  const toContactm = () => {
+    scrollToHome(9000); // Navigate to "Home" route first
   };
 
   const toAbout = () => {
     scrollToHome(2900); // Navigate to "Home" route first
   };
 
-  const toProjectsM = () => {
-    scrollToHome(450); // Navigate to "Home" route first
+  const toAboutm = () => {
+    scrollToHome(2900); // Navigate to "Home" route first
   };
 
   return (
@@ -128,14 +144,21 @@ export const Header2 = () => {
         }}
       >
         <MNavItem href="/">Home</MNavItem>
-
-        <MNavItem href="#about">About</MNavItem>
-        <MNavItem href="#projects">Projects</MNavItem>
-        <MNavItem href="#work">CV</MNavItem>
-
-        <MNavItem href="#contact">Contact</MNavItem>
-
-        <MNavItem href="#techs">Tech</MNavItem>
+        <MNavItem href="#projects" onClick={toProjectsm}>
+          Projects
+        </MNavItem>
+        <MNavItem href="#about" onClick={toAboutm}>
+          About
+        </MNavItem>
+        <MNavItem href="#techs" onClick={toTechm}>
+          Tech
+        </MNavItem>
+        <MNavItem href="#work" onClick={toCvm}>
+          CV
+        </MNavItem>
+        <MNavItem href="#contact" onClick={toContactm}>
+          Contact
+        </MNavItem>
       </MobileNav>
     </Head>
   );

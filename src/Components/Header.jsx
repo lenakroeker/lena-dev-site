@@ -56,7 +56,7 @@ export const Header = () => {
   };
 
   const toProjectsM = () => {
-    scrollToPosition(430);
+    scrollToPosition(380);
   };
 
   return (
