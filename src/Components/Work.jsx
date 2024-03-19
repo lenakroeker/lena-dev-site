@@ -156,7 +156,7 @@ export default function Work() {
 }
 
 const Container = styled.div`
-  margin: 2400px 0 300px 0;
+  margin: 2400px 0 350px 0;
   height: auto;
   width: 100%;
   background: transparent;
