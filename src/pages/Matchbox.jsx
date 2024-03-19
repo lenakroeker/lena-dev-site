@@ -45,7 +45,7 @@ export default function GreyRoom() {
           <Tech>UX writing</Tech>
         </Techs>{" "}
       </Head>
-      <Box>
+      {/* <Box>
         <Images>
           <Img1 src={Stats1} />
           <Img1 src={Stats2} />
@@ -58,8 +58,8 @@ export default function GreyRoom() {
           distinguish matchbox from other energy modelling apps, while carrying
           through the brand colours.
         </Text>
-      </Box>
-      <Box2>
+      </Box> */}
+      {/* <Box2>
         <Images>
           <Video2 autoPlay loop muted>
             <source src={InfoVid} type="video/mp4" />
@@ -69,7 +69,7 @@ export default function GreyRoom() {
           Creation of an original demo video displaying the interface and ease
           of use
         </Text>
-      </Box2>
+      </Box2> */}
       <Video1 autoPlay loop muted>
         <source src={VideoFile} type="video/mp4" />
       </Video1>
@@ -84,7 +84,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media (max-width: 768px) {
     width: 95vw;
-    margin-top: 50px;
+    padding-top: 50px;
   }
 `;
 
@@ -116,6 +116,7 @@ const Head = styled.div`
 const Title = styled.div`
   font-size: 50px;
   padding-top: 80px;
+  margin-bottom: 20px;
 
   @media (max-width: 768px) {
     font-size: 40px;
@@ -128,18 +129,41 @@ const Next = styled(Link)`
   top: 110px;
   right: 25vw;
   color: black;
+  @media (max-width: 768px) {
+    top: 155px;
+    right: 5vw;
+  }
 `;
 const Prev = styled(Link)`
   position: absolute;
   top: 110px;
   left: 25vw;
   color: black;
+  @media (max-width: 768px) {
+    top: 155px;
+    left: 5vw;
+  }
 `;
-const Site = styled.a``;
+const Site = styled.a`
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: #abfcf3;
+  cursor: pointer;
+  &:hover {
+    background: #00ffe1;
+  }
+`;
 
 const Description = styled.div`
   margin: 20px auto;
   width: 40vw;
+  margin-top: 50px;
+
+  @media (max-width: 768px) {
+    width: 85vw;
+  }
 `;
 const Techs = styled.div`
   display: flex;
@@ -150,8 +174,8 @@ const Techs = styled.div`
 const Tech = styled.div`
   padding: 5px 15px;
   margin: 10px;
-  border: 1px solid black;
-  border-radius: 30px;
+  background: rgba(252, 250, 251, 0.35);
+  border-radius: 10px;
 `;
 const Subtitle = styled.h3`
   margin: 50px;

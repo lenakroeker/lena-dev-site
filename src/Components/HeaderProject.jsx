@@ -16,7 +16,7 @@ export const Header2 = () => {
 
   const dropHandleM = () => {
     if (rot === 0) {
-      setDropOpenM("calc(60px - 103vw)");
+      setDropOpenM("calc(75px - 103vw)");
 
       setRot(45);
     } else {
@@ -127,15 +127,15 @@ export const Header2 = () => {
           transition: "right 0.2s ease-in-out",
         }}
       >
-        <Item></Item>
+        <MNavItem href="/">Home</MNavItem>
 
-        <NavItem href="#about">About</NavItem>
-        <NavItem href="#projects">Projects</NavItem>
-        <NavItem href="#work">CV</NavItem>
+        <MNavItem href="#about">About</MNavItem>
+        <MNavItem href="#projects">Projects</MNavItem>
+        <MNavItem href="#work">CV</MNavItem>
 
-        <NavItem href="#contact">Contact</NavItem>
+        <MNavItem href="#contact">Contact</MNavItem>
 
-        <NavItem href="#techs">Tech</NavItem>
+        <MNavItem href="#techs">Tech</MNavItem>
       </MobileNav>
     </Head>
   );
@@ -168,6 +168,9 @@ const XImg = styled.img`
   position: fixed;
   top: 20px;
   left: 20px;
+  @media (max-width: 768px) {
+    left: 87vw;
+  }
 `;
 
 const Head = styled.header`
@@ -201,6 +204,7 @@ const DropBtn = styled.div`
   z-index: 10000;
   transition: transform 0.8s ease-in-out;
   @media (max-width: 768px) {
+    position: fixed;
     top: 0;
     right: 0;
     width: 60px;
@@ -232,6 +236,8 @@ const MobileNav = styled.div`
     display: flex;
     transition: 1s ease-in-out;
     margin-top: 0;
+    padding-top: 9vh;
+
     background: black;
     color: white;
     position: relative;
@@ -241,7 +247,22 @@ const MobileNav = styled.div`
     z-index: 9000;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
+  }
+`;
+
+const MNavItem = styled.a`
+  @media (max-width: 768px) {
+    text-decoration: none;
+    color: #fcf3f2;
+    transition: 0.5s ease-in-out;
+    height: 15vh;
+    padding: 0 20px;
+    margin-left: -70px;
+    transform: rotate(90deg);
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    padding: 0;
   }
 `;
 

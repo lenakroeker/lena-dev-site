@@ -232,7 +232,7 @@ const MNavItem = styled.a`
     transition: 0.5s ease-in-out;
     height: 15vh;
     padding: 0 20px;
-    margin-left: -100px;
+    margin-left: -70px;
     transform: rotate(90deg);
     font-size: 18px;
     letter-spacing: 0.2em;
