@@ -12,7 +12,7 @@ export default function Background() {
 
 const Div = styled.div`
   width: 90vw;
-  height: 100vh;
+  height: 98vh;
   position: fixed;
   z-index: -10;
 
