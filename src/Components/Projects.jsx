@@ -122,6 +122,7 @@ const Outer = styled.div`
   transition: opacity 0.3s ease; // Add transition for smooth fading
   @media (max-width: 768px) {
     width: 95vw;
+    height: 80%;
   }
 `;
 

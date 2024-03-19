@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Link } from "react-scroll";
 
 export default function Work() {
   const screenHeight = window.innerHeight;
@@ -8,9 +9,6 @@ export default function Work() {
     <Container id="work">
       <TextArea>
         <H3>CV</H3>
-        <A href="./assets/Lena-Kroeker-CV.pdf" download="Lena-Kroeker-CV.pdf">
-          Download PDF
-        </A>
 
         <Job>
           <Head>
@@ -198,6 +196,17 @@ const H3 = styled.h3`
 `;
 const A = styled.a`
   text-align: center;
+  text-decoration: none;
+  background: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: black;
+  margin: auto;
+  transition: 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    background: #f6cfd6;
+  }
 `;
 
 const TextArea = styled.div`
