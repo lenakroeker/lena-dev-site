@@ -67,6 +67,7 @@ const Container = styled.div`
   z-index: 4;
   transition: opacity 0.3s ease; // Add transition for smooth fading
   @media (max-width: 768px) {
+    overflow-y: hidden;
   }
 `;
 
