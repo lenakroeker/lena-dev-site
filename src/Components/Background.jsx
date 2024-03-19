@@ -17,7 +17,6 @@ const Div = styled.div`
   z-index: -10;
 
   @media (max-width: 768px) {
-    display: none;
   }
 `;
 const Img = styled.img`
@@ -25,4 +24,8 @@ const Img = styled.img`
   height: auto;
   opacity: 0.15;
   background: #defaff;
+  object-fit: cover;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;

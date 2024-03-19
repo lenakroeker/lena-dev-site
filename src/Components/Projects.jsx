@@ -142,6 +142,8 @@ const Container = styled.div`
     padding: 0;
     margin: 0;
     width: 80vw;
+    height: 100%;
+    overflow-y: hidden;
   }
 `;
 

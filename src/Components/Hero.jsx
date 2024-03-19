@@ -39,6 +39,8 @@ const TextArea = styled.div`
 
   @media (max-width: 768px) {
     width: 90vw;
+    height: 100%;
+    overflow-y: hidden;
   }
 `;
 
