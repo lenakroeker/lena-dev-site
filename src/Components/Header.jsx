@@ -1,0 +1,243 @@
+import React, { useContext, useState, useEffect } from "react";
+import styled, { keyframes } from "styled-components";
+
+import X from "../assets/images/x.png";
+import { Link as ScrollLink } from "react-scroll";
+
+export const Header = () => {
+  const [dropOpen, setDropOpen] = useState("-100px");
+  const [rot, setRot] = useState(0);
+  const [dropOpenM, setDropOpenM] = useState("-100vw");
+
+  const dropHandleM = () => {
+    if (rot === 0) {
+      setDropOpenM("calc(60px - 101vw)");
+
+      setRot(45);
+    } else {
+      setRot(0);
+      setDropOpenM("-103vw");
+    }
+  };
+
+  const dropHandle = () => {
+    dropHandleM();
+
+    if (rot === 0) {
+      setDropOpen("0px");
+
+      setRot(45);
+    } else {
+      setRot(0);
+      setDropOpen("-100px");
+    }
+  };
+  //hidden header on scroll
+
+  const scrollToPosition = (position) => {
+    window.scrollTo({
+      top: position,
+      behavior: "smooth", // Optional: animated smooth scroll
+    });
+  };
+
+  //to projects
+
+  const toProjects = () => {
+    scrollToPosition(1350);
+  };
+
+  const toContact = () => {
+    scrollToPosition(document.documentElement.scrollHeight);
+  };
+
+  const toAbout = () => {
+    scrollToPosition(2900);
+  };
+
+  const toProjectsM = () => {
+    scrollToPosition(430);
+  };
+
+  return (
+    <Head>
+      <DropBtn
+        onClick={() => {
+          dropHandle();
+        }}
+      >
+        <XImg
+          src={X}
+          style={{
+            transform: `rotate(${rot}deg)`,
+            transition: "0.6s ease-in-out",
+          }}
+        />
+      </DropBtn>
+      <Nav
+        onClick={() => dropHandle()}
+        style={{
+          left: dropOpen,
+          transition: "left 0.2s ease-in-out",
+        }}
+      >
+        <Item></Item>
+        <NavItem href="#projects" onClick={toProjects}>
+          Projects
+        </NavItem>
+        <NavItem href="#about" onClick={toAbout}>
+          About
+        </NavItem>
+
+        <NavItem href="#techs">Tech</NavItem>
+        <NavItem href="#work">CV</NavItem>
+        <NavItem href="#contact" onClick={toContact}>
+          Contact
+        </NavItem>
+      </Nav>
+      <MobileNav
+        onClick={() => dropHandleM()}
+        style={{
+          right: dropOpenM,
+          transition: "right 0.2s ease-in-out",
+        }}
+      >
+        <Item></Item>
+        <MNavItem href="#projects" onClick={toProjectsM}>
+          Projects
+        </MNavItem>
+        <MNavItem href="#about" onClick={toAbout}>
+          About
+        </MNavItem>
+        <MNavItem href="#techs">Tech</MNavItem>
+
+        <MNavItem href="#work">CV</MNavItem>
+
+        <MNavItem href="#contact" onClick={toContact}>
+          Contact
+        </MNavItem>
+      </MobileNav>
+    </Head>
+  );
+};
+
+const NavItem = styled.a`
+  text-decoration: none;
+  color: #fcf3f2;
+  transition: 0.5s ease-in-out;
+  height: 42px;
+  padding: 0 20px;
+
+  &:hover {
+    color: #b80056 !important;
+  }
+  @media (max-width: 768px) {
+    transform: rotate(90deg);
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    padding: 0;
+  }
+`;
+
+const Item = styled.div`
+  height: 0px;
+`;
+const XImg = styled.img`
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+`;
+
+const Head = styled.header`
+  z-index: 200;
+  display: flex;
+  width: 40px;
+  height: 35px;
+  padding: 0px 0px 0 0px;
+  padding-top: 0px;
+  background: transparent;
+  position: fixed;
+  width: 70%;
+  top: 0;
+  line-height: 3em;
+  background: transparent;
+  transition: 0.5s ease-in-out;
+  box-shadow: none;
+  @media (max-width: 768px) {
+  }
+`;
+
+const DropBtn = styled.div`
+  width: 90px;
+  height: 70px;
+  position: fixed;
+  padding-top: 15px;
+  cursor: pointer;
+  padding-left: 0px;
+  text-align: center;
+  background: transparent;
+  z-index: 10000;
+  transition: transform 0.8s ease-in-out;
+  @media (max-width: 768px) {
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 70px;
+  }
+`;
+
+const Nav = styled.div`
+  transition: 1s ease-in-out;
+  margin-top: 0;
+  background: black;
+  color: white;
+  position: relative;
+  text-align: center;
+  width: 90px;
+  height: 100vh;
+  z-index: 9000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileNav = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    transition: 1s ease-in-out;
+    margin-top: 0;
+    padding-top: 15vh;
+
+    background: black;
+    color: white;
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 100vh;
+    z-index: 9000;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+`;
+
+const MNavItem = styled.a`
+  @media (max-width: 768px) {
+    text-decoration: none;
+    color: #fcf3f2;
+    transition: 0.5s ease-in-out;
+    height: 15vh;
+    padding: 0 20px;
+    margin-left: -100px;
+    transform: rotate(90deg);
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    padding: 0;
+  }
+`;
+
+export default Header;
