@@ -163,7 +163,7 @@ const Container = styled.div`
   padding-bottom: 50px;
   padding-top: 50px;
   color: black;
-
+  overflow-y: hidden;
   @media (max-width: 768px) {
     padding: 0px;
     margin-bottom: 260vw;

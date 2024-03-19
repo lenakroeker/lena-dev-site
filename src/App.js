@@ -1,4 +1,6 @@
 import "./App.css";
+import styled from "styled-components";
+
 import Home from "./pages/Home.jsx";
 import Header from "./Components/Header.jsx";
 import Bg from "./Components/Background.jsx";

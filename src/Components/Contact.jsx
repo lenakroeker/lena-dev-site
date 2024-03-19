@@ -104,7 +104,7 @@ const MobileContainer = styled.div`
     height: 90vh;
     width: 100%;
     top: 0px;
-    padding: 30vw 0 40px 0;
+    padding: 10vw 0 100px 0;
     position: fixed;
     background: black;
     text-align: center;
