@@ -54,6 +54,8 @@ const H1 = styled.h1`
 
 const H2 = styled.h2`
   color: black;
+  margin: -1vh auto 1vh auto;
+
   @media (max-width: 768px) {
     font-size: 20px;
 `;
