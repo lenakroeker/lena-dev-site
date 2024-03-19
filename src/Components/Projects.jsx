@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import LenaVid from "../assets/videos/lenasite.mp4";
 import GreyVid from "../assets/videos/greyroomshop.mp4";
-import Spiffvid from "../assets/videos/spiff.mp4";
+import Spiffvid from "../assets/videos/spiff-square.mp4";
 import MatchboxVid from "../assets/videos/matchbox.mp4";
 
 import { useEffect, useState } from "react";

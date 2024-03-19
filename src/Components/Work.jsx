@@ -227,7 +227,7 @@ const H4 = styled.h4`
 `;
 
 const H5 = styled.span`
-  color: #52525e;
+  color: #020277;
   @media (max-width: 768px) {
     width: 100%;
     margin: 2px;
