@@ -39,6 +39,7 @@ export default function LKSite() {
 const Container = styled.div`
   width: 80vw;
   margin: 0 auto;
+  background: #ffffff96;
   @media (max-width: 768px) {
     width: 95vw;
     padding-top: 50px;
@@ -106,10 +107,11 @@ const Site = styled.a`
   color: black;
   padding: 10px 30px;
   border-radius: 30px;
-  background: #abfcf3;
+  background: #ffffff;
+  border: 1px solid green;
   cursor: pointer;
   &:hover {
-    background: #00ffe1;
+    background: #d0f9ee;
   }
 `;
 
@@ -131,7 +133,7 @@ const Techs = styled.div`
 const Tech = styled.div`
   padding: 5px 15px;
   margin: 10px;
-  background: rgba(252, 250, 251, 0.35);
+  background: rgb(242, 237, 240);
   border-radius: 10px;
 `;
 const Subtitle = styled.h3`
