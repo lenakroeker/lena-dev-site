@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import ToHome from "../Components/ToHome";
 import VideoFile from "../assets/videos/lenasite.mp4";
+import VideoFileNew from "../assets/videos/portfolio2.mp4";
+
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import HeaderProject from "../Components/HeaderProject";
@@ -21,13 +23,28 @@ export default function LKSite() {
         </Prev>
         <Title>Art Portfolio</Title>
         <Site href="https://lenakroeker.com/">lenakroeker.com</Site>
+        <Description>Personal portfolio site for Lena Kroeker</Description>
+        <Techs>
+          <Tech>ReactJS</Tech>
+          <Tech>Redux</Tech>
+          <Tech>Styled Components</Tech>
+          <Tech>NodeJS</Tech>
+          <Tech>MongoDB</Tech>
+          <Tech>Firebase Storage</Tech>
+          <Tech>UX Design</Tech>
+        </Techs>
+        <Video1 autoPlay loop muted>
+          <source src={VideoFileNew} type="video/mp4" />
+        </Video1>
+
+        <Title>Art Portfolio (Old Version)</Title>
         <Description>
           Personal art ecommerce site and portfolio for Lena Kroeker
         </Description>
         <Techs>
           <Tech>Shopify Custom Theme (Liquid)</Tech>
           <Tech>UX Design</Tech>
-        </Techs>{" "}
+        </Techs>
       </Head>
       <Video1 autoPlay loop muted>
         <source src={VideoFile} type="video/mp4" />
