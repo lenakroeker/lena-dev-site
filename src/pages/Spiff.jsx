@@ -17,6 +17,9 @@ export default function GreyRoom() {
       <HeaderProject />
 
       <Head>
+        <Prev to="/sweven">
+          <FaLongArrowAltLeft size={30} />
+        </Prev>
         <Next to="/greyroomshop">
           <FaLongArrowAltRight size={30} />
         </Next>

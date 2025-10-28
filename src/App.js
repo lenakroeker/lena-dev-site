@@ -15,6 +15,7 @@ import GreyRoom from "./pages/GreyRoom.jsx";
 import LKsite from "./pages/LKSite.jsx";
 
 import Matchbox from "./pages/Matchbox.jsx";
+import Sweven from "./pages/Sweven.jsx";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route>
           <Route exact path="/lkportfolio" element={<LKsite />} />
+        </Route>
+        <Route>
+          <Route exact path="/sweven" element={<Sweven />} />
         </Route>
       </Routes>
     </Router>

@@ -5,6 +5,7 @@ import LenaVid from "../assets/videos/portfolio2.mp4";
 import GreyVid from "../assets/videos/greyroomshop.mp4";
 import Spiffvid from "../assets/videos/spiff-square.mp4";
 import MatchboxVid from "../assets/videos/matchbox.mp4";
+import SwevenVid from "../assets/videos/sweven.mp4";
 
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,14 @@ export default function Projects() {
     >
       <Container>
         <H3>Projects</H3>
-
+        <Proj>
+          <Link to="./sweven">
+            <Video autoPlay loop muted>
+              <source src={SwevenVid} type="video/mp4" />
+            </Video>
+            <H4>SWEVEN</H4>
+          </Link>
+        </Proj>
         <Proj id="proj">
           <Link to="./spiff">
             <Video autoPlay loop muted>
@@ -159,17 +167,17 @@ const H3 = styled.h3`
 `;
 
 const Proj = styled.div`
-  height: 18vw;
-  width: 18vw;
+  height: 22vw;
+  width: 14vw;
   position: relative;
   background: transparent;
-  margin: 20px 10px;
+  margin: 20px 5px;
   overflow: hidden;
   transition: 1s ease-in-out;
   @media (max-width: 768px) {
     margin: 1vh 0;
     width: 100%;
-    height: 16vh;
+    height: 14vh;
     box-shadow: none;
     border: none;
   }
